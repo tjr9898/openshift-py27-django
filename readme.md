@@ -2,11 +2,11 @@ Runtime Configuration
 ======================
 Create a new OpenShift app:
 
-* `rhc-create-app -a <app_name> -t diy-0.1`
+* `rhc app create -a <app_name> -t diy-0.1`
 
-Login to the application host using the credentials from the above command.  It will look like `ssh://c8812345:123214@<app_name>-username.rhcloud.com`:
+Login to the application host using the credentials from the above command.  It will look like `ssh://c8812345:123214@<app_name>-namespace.rhcloud.com`:
 
-* `ssh c8812345:123214@<app_name>-username.rhcloud.com`
+* `ssh c8812345:123214@<app_name>-namespace.rhcloud.com`
 
 Change into the application tmp directory:
 
