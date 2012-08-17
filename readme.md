@@ -43,9 +43,6 @@ Install setuptools and pip
 * `cd pip-1.1`
 * `python setup.py install`
 
-Install uWSGI
-* `cd $OPENSHIFT_TMP_DIR`
-* `pip install uwsgi`
 
 Application Setup
 ===================
@@ -53,10 +50,10 @@ Application Setup
 Clone / Fork this repo.
 
 Add an upstream to OpenShift:
-* Get the `Git URL` from `rhc app show -a <app_name>`
-* `git remote add openshift <GIT_URL_from_above>`
-* `git push openshift master`
-
+* switch into your local repo `cd <app_name>`
+* `git remote add upstream -m master git://github.com/openshift/openshift-diy-py27-django.git`
+* `git pull -s recursive -X theirs upstream master`
+* `git push`
 
 * Note
 =======
